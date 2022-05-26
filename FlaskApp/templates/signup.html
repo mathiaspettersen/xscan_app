@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+h1 {
+  text-align: center;
+  font-size:  75px;
+  font-family: 'Courier New', monospace;
+}
+
+h2 {
+  text-align: center;
+  font-size:  20px;
+  font-family: 'Courier New', monospace;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #000000;
+  border-radius: 12px;
+  top: 50%;
+  font-family: 'Courier New', monospace;
+}
+
+.button2:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.element {
+
+  top: 1; bottom: 50; left: 50; right: 500;
+  margin: auto;
+  height: 300px; 
+}
+
+.fonts {
+  font-family: 'Courier New', monospace;
+}
+  
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+</style>
+
+<body>
+
+
+    <h1> xScan</h1>
+    <h2> The homemade network mapper</h2>
+
+    
+
+    
+   
+</body> 
+
+<div class="column is-4 is-offset-4">
+  <br>
+  <div class="fonts">
+    <div class="text-center">
+    <h3 class="title">Sign Up</h3>
+    <br>
+    </div>
+    </div>
+    <div class="box">
+        <form method="POST" action="/signup">
+            <div class="field">
+              <div class="fonts">
+                <div class="text-center">
+                    <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="">
+                
+
+                
+            
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="name" placeholder="Name" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="password" name="password" placeholder="Password">
+                </div>
+            </div>
+            <br>
+            <button class="button button2 is-block is-info is-large is-fullwidth">Sign Up</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+{% endblock %}

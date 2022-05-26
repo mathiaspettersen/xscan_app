@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+
+<html>
+
+<style>
+h1 {
+  text-align: center;
+  font-size:  75px;
+  font-family: 'Courier New', monospace;
+}
+
+h2 {
+  text-align: center;
+  font-size:  20px;
+  font-family: 'Courier New', monospace;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.element {
+
+  top: 1; bottom: 50; left: 50; right: 500;
+  margin: auto;
+  height: 300px; 
+}
+  
+.fonts {
+  font-family: 'Courier New', monospace;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #000000;
+  border-radius: 12px;
+  top: 50%;
+  font-family: 'Courier New', monospace;
+}
+
+.button2:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+</style>
+
+<body>
+
+    <h1> xScan</h1>
+    <h2> The homemade network mapper</h2>
+
+    <br><br>
+    <br><br>
+    <div class="text-center">
+      <div class="fonts">
+        <form action="{{ url_for('profile' ) }}" method="post">
+          <p>Enter the IP address to scan:</p>
+            <input type="text" placeholder="IP address" name="ip_address" maxlength="15" minlength="7">
+        
+
+        <div class="fonts">
+          <br>
+          <nav>
+              <a href="/results">
+                      
+                          
+                  <button onclick="blinking()" type="submit" class="button button2 is-block is-info is-large is-fullwidth" >Scan</button>
+
+              </a>
+          </nav> 
+          </div>
+          </form>
+      </div>
+    </div>
+
+    <div id="myDIV">BLINK ME</div>
+
+    <script type="text/javascript">
+    function blinking() {
+      const element = document.getElementById("myDIV");
+      element.classList.add("blink_me");
+      // To get all classes of an element:
+      const element = document.getElementById("myDIV");
+      let classList = element.classList;
+    }
+    </script>
+</body> 
+
+
+  
+</html>
+
+{% endblock %}
