@@ -6,6 +6,7 @@ Get the repository:
 
 ```shell
 git clone https://github.com/mathiaspettersen/xscan_app
+```
 
 
 Inside the FlaskApp directory:
