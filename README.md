@@ -14,4 +14,4 @@ Inside the FlaskApp directory:
 
 `flask run`
 
-Enter the `127.0.0.1:5000` into a web browser and use the application!
+Enter the `http://127.0.0.1:5000` into a web browser and use the application!
