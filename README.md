@@ -14,7 +14,11 @@ Inside the FlaskApp directory:
 ```shell
 export FLASK_APP=main
 
+then
+
 export FLASK_ENV=development
+
+then
 
 flask run
 ```
