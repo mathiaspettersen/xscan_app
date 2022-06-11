@@ -1,4 +1,4 @@
-# xScan Scanning Application using Flask (under development)
+# UNDER DEVELOPMENT | xScan Scanning Application using Flask
 
 An application which uses Flask for Python to act as a framework to get information projected on the web page. It also runs the nMAP scan that is outputted through an HTML box.
 
